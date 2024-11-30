@@ -1,9 +1,36 @@
+import Icon from "@components/Icon";
+import Typography from "@components/Typography";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <Icon name="Activity" size="24" />
+        <Typography as={"h1"} variant="h1" className="testing">
+          Hello There H1
+        </Typography>
+        <Typography as={"h2"} variant="h2" className="testing">
+          Hello There H2
+        </Typography>
+        <Typography as={"h1"} variant="h3" className="testing">
+          Hello There H3
+        </Typography>
+        <Typography as={"h1"} variant="h4" className="testing">
+          Hello There H4
+        </Typography>
+        <Typography as={"h1"} variant="h5" className="testing">
+          Hello There H5
+        </Typography>
+        <Typography as={"h1"} variant="p" className="testing">
+          Hello There P
+        </Typography>
+        <Typography as={"h1"} variant="label" className="testing">
+          Hello There Label
+        </Typography>
+        <Typography as={"h1"} variant="tiny" className="testing">
+          Hello There tiny
+        </Typography>
         <Image
           className="dark:invert"
           src="/next.svg"
